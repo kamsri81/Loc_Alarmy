@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_general_setting">
+
+        <ListPreference
+            android:key="preflocationstrategy"
+            android:entries="@array/prefLocationStrategy"
+            android:summary="%s"
+            android:entryValues="@array/prefLocationStrategyValues"
+            android:title="@string/prefLocationStrategy"
+            android:defaultValue="0"/>
+
+        <ListPreference
+            android:key="prefarearadius"
+            android:entries="@array/prefarearadiusentries"
+            android:summary="%s"
+            android:entryValues="@array/prefarearadiusentryvalues"
+            android:title="@string/prefarearadius"
+            android:defaultValue="100"/>
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_alarm_setting" >
+
+        <ListPreference
+            android:key="prefsnoozeduration"
+            android:entries="@array/SnoozeDuration"
+            android:summary="%s"
+            android:entryValues="@array/SnoozeDurationValues"
+            android:title="@string/prefsnoozeduration"
+            android:defaultValue="5"/>
+
+        <SwitchPreference
+            android:key="prefvibrate"
+            android:title="@string/prefvibrate"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefDeleteAlarm"
+            android:summary="@string/prefDeleteAlarmSummary"
+            android:title="@string/prefDeleteAlarm" >
+        </CheckBoxPreference>
+
+
+        <com.example.kamali.loc_based_alarm.appsettings_seekbarpreference
+            android:key="seekBarPreference"
+            android:title="@string/dialog_title"
+            android:dialogTitle="@string/dialog_title"
+            android:persistent="true"
+            android:defaultValue="20"
+            android:summary="@string/prefseekbarsummary"
+  />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_task_setting">
+
+        <ListPreference
+            android:key="prefTaskReminder"
+            android:entries="@array/taskreminderentries"
+            android:summary="%s"
+            android:entryValues="@array/taskremindervalues"
+            android:title="@string/preftaskreminder"
+            android:defaultValue="1"/>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

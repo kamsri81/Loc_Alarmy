@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_general_setting">GENERAL SETTINGS</string>
+    <string name="pref_alarm_setting">ALARM SETTINGS</string>
+    <string name="pref_task_setting">TASK SETTINGS</string>
+
+    <string name="prefDeleteAlarm">Delete Alarm</string>
+    <string name="prefDeleteAlarmSummary">Deletes the alarm after it goes off</string>
+    <string name="prefsnoozeduration">Snooze Duration</string>
+    <string name="prefsnoozeduration_summary">Set the snooze duration</string>
+    <string name="prefvibrate">Vibrate when alarm rings</string>
+    <string name="prefAlarmVolume">Alarm Volume</string>
+
+    <string name="preftaskreminder">Repeat Task Reminder</string>
+    <string name="preftaskremindersummary">Sets the number of times to remind the task</string>
+    <string name="prefseekbarsummary">Sets the alarm volume</string>
+    <string name="prefLocationStrategy">Current User Location </string>
+
+    <string name="prefarearadius">Area Radius </string>
+    <string name="dialog_title">Alarm Volume</string>
+
+</resources>

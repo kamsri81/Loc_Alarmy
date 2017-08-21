@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        layout="@layout/toolbar_setalarmactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/setalarmlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:dividerHeight="3px"
+        android:divider="@color/colorbluegreydark"
+        android:smoothScrollbar="true"
+        />
+    <TextView
+        android:id="@+id/setalarmTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setalarmlist"
+        android:layout_gravity="center"/>
+
+    <TimePicker
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/alarmTimePicker"
+        android:timePickerMode="spinner"
+        android:layout_below="@+id/setalarmTextview"
+        android:layout_alignLeft="@+id/setalarmTextview" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="PREVIEW ALARM"
+        android:id="@+id/Previewalarm"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:typeface="serif"
+        android:background="@color/colorbluegreymedium"/>
+
+
+
+</LinearLayout>

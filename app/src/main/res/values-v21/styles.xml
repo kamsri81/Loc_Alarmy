@@ -1,0 +1,23 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorblack</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorcyan</item>
+        <item name="colorPrimaryDark">@color/colorblack</item>
+        <item name="colorAccent">@color/colorcyan</item>
+        <item name="android:colorBackground">@color/colorbluegrey</item>
+        <item name="android:statusBarColor">@color/colorblack</item>
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorAccent">@color/colorbluegreydarkest</item>
+    <item name="android:colorAccent">@color/colorbluegreydarkest</item>
+</style>
+</resources>

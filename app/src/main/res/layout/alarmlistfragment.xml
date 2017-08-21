@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALARM LIST"
+        android:drawableLeft="@drawable/ic_alarm_cyan"
+        android:layout_marginTop="20dp"
+        android:typeface="normal"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorbluegreymedium"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <ListView
+        android:id="@+id/alarmlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_alarm"
+        android:smoothScrollbar="true"
+        android:dividerHeight="8dp"
+        android:divider="@android:color/transparent"
+        android:layout_below="@id/view"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"/>
+
+    <Button
+        android:id="@+id/add_alarm"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorblack"
+        android:background="@drawable/addareabutton"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="15dp"
+        android:textStyle="normal"
+        android:drawableLeft="@drawable/ic_alarmadd_black"
+        android:gravity="center"/>
+
+</RelativeLayout>
